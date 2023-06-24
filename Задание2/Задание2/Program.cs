@@ -18,8 +18,8 @@ int GetNumberFromUser(string message, string errorMessage)
     while(true)
     {
         Console.Write(message);
-        if(int.TryParse(Console.ReadLine(), out int userNumber1))
-            return userNumber1;
+        if(int.TryParse(Console.ReadLine(), out int userNumber))
+            return userNumber;
         Console.WriteLine(errorMessage);
     }
 }
@@ -40,8 +40,8 @@ int GetNumberFromUser2(string message, string errorMessage)
     while(true)
     {
         Console.Write(message);
-        if(int.TryParse(Console.ReadLine(), out int userNumber1))
-            return userNumber1;
+        if(int.TryParse(Console.ReadLine(), out int userNumber2))
+            return userNumber2;
         Console.WriteLine(errorMessage);
     }
 }
