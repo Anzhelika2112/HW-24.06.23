@@ -16,8 +16,8 @@ int GetNumberFromUser(string message, string errorMessage)
     while(true)
     {
         Console.Write(message);
-        if(int.TryParse(Console.ReadLine(), out int userNumber1))
-            return userNumber1;
+        if(int.TryParse(Console.ReadLine(), out int userNumber))
+            return userNumber;
         Console.WriteLine(errorMessage);
     }
 }
